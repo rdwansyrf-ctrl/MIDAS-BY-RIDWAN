@@ -1,0 +1,42 @@
+============================================================
+RDWN M32 LIVE TRAINING SIMULATOR - CHANGELOG
+============================================================
+
+Version 1.0.0 (Initial Commercial Desktop Release)
+------------------------------------------------------------
+- Architecture:
+  * Established 40 input processing channels, 16 mix buses, 6 matrix outputs, 8 DCAs, and 6 mute groups.
+  * 16-channel visible fader bank architecture with layer banking (1-16, 17-32, AUX/RET, BUS 1-8, BUS 9-16, MTX, DCA, USER 1, USER 2).
+  * Sends on Fader (Fader Flip) monitor mixing workflow with target bus selection.
+
+- Audio Engine & DSP:
+  * Real 48 kHz multi-channel DSP engine with strict zero-music startup policy.
+  * 4-Band Parametric EQ with interactive SVG visual curve, draggable handles, and 6 filter modes.
+  * Dynamics compressor with adjustable threshold, ratio, attack, hold, release, knee, makeup gain, and real gain reduction meter.
+  * Analogue-modeled Noise Gate & Ducker with threshold, range, and envelope timings.
+  * Real 100-Band RTA (Real-Time Spectrum Analyzer) computed from audio FFT.
+  * Real 24-Segment Stereo L/R master meters and channel meters (silence = -90 dBFS).
+  * Real Master L/R WAV live audio recording.
+
+- Native Windows Backend:
+  * Rust Tauri architecture with direct WASAPI capture and playback.
+  * WASAPI Loopback system audio capture for direct streaming from Chrome, YouTube, or media players.
+  * Hardware device enumeration with VB-Audio Virtual Cable recognition and ASIO driver probing.
+  * Windows Audio Engine configuration dialog with sample rate, buffer size, latency, and CPU load reporting.
+
+- Training & Education:
+  * Integrated Interactive Training Missions with live audio parameter validation:
+    1. Preamp Gain Staging
+    2. High-Pass Filter (HPF) Mud Removal
+    3. Noise Gate Dial-In
+    4. 4-Band PEQ Surgical Notch
+    5. Bass Guitar Dynamics Control
+    6. Monitor Mix using Sends on Faders
+    7. DCA Group Master Control
+    8. Master Stereo Bus Unity Gain
+
+- Packaging & Windows Installer:
+  * Complete NSIS standalone setup installer script (installer.nsi).
+  * Windows release automation script (build_windows_release.ps1).
+  * Desktop and Start Menu shortcut generation.
+  * Complete project state serialization (.rdwnmix).

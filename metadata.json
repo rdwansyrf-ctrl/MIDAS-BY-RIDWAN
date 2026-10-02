@@ -1,0 +1,8 @@
+{
+  "name": "Remix RDWN M32 Live Training Simulator",
+  "description": "Professional M32-style digital mixing console simulator and training workstation with native Windows audio routing, 40 input channels, 16 mix buses, 8 DCAs, virtual FX rack, and real-time DSP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

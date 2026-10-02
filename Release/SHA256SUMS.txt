@@ -1,0 +1,7 @@
+# SHA-256 Checksums for RDWN M32 Live Training Simulator v1.0.0
+# Windows x64 Standalone Release Verification
+
+590eaedfaecd373b3dfe0e4f0fc48080c93da6f9ff081c4f8c11ef99c1039c1b  README.txt
+9d48a4dfeff32272f7bf3fbab8ea3511e014ad8bee9ffac40cf36cc8b0737143  CHANGELOG.txt
+f8fbc677cee0ea54f1779852a56f0acdaec19879582f1109a6a8b2dc045c3be9  installer.nsi
+c05bd25adcfaaa583b5bfa41ee14cbcc929d55c26936c363ea79466e6c86777f  build_windows_release.ps1
